@@ -97,6 +97,13 @@ body {
     height: 50px;
     margin-bottom: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: linear-gradient(135deg, lighten(#FF79DA, 10%), lighten(#9356DC, 10%));
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
   }
 }
 

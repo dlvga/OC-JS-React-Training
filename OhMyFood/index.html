@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -68,7 +68,10 @@
                     <p class="restaurant-card__location">Ménilmontant</p>
                     </div>
                     <button class="restaurant-card__favorite">
-                        <i class="fa-solid fa-heart"></i>
+                        <input type="checkbox" id="heart-menilmontant" class="restaurant-card__favorite-checkbox">
+                        <label for="heart-menilmontant">
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
                     </button>
                 </div>
             </a>
@@ -84,7 +87,10 @@
                     <p class="restaurant-card__location">Charonne</p>
                     </div>
                     <button class="restaurant-card__favorite">
-                        <i class="fa-solid fa-heart"></i>
+                        <input type="checkbox" id="heart-charonne" class="restaurant-card__favorite-checkbox">
+                        <label for="heart-charonne">
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
                     </button>
                 </div>
             </a>
@@ -99,12 +105,15 @@
                     <p class="restaurant-card__location">Cité Rouge</p>
                     </div>
                     <button class="restaurant-card__favorite">
-                        <i class="fa-solid fa-heart"></i>
+                        <input type="checkbox" id="heart-cite-rouge" class="restaurant-card__favorite-checkbox">
+                        <label for="heart-cite-rouge">
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
                     </button>
                 </div>
             </a>
 
-            <a href="restaurants/folie-mericourt.html" class="restaurant-card">
+            <div href="restaurants/folie-mericourt.html" class="restaurant-card">
                 <div class="restaurant-card__image">
                     <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat Le délice des sens">
                 </div>
@@ -114,10 +123,13 @@
                     <p class="restaurant-card__location">Folie-Méricourt</p>
                     </div>
                     <button class="restaurant-card__favorite">
-                        <i class="fa-solid fa-heart"></i>
+                        <input type="checkbox" id="heart-mericourt" class="restaurant-card__favorite-checkbox">
+                        <label for="heart-mericourt">
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
                     </button>
                 </div>
-            </a>
+            </div>
         </div>
     </section>
 

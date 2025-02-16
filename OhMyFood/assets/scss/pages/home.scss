@@ -1,17 +1,5 @@
 @import "../abstracts/variables";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: $font-primary;
-  margin: 0;
-  padding: 0;
-}
-
 // HERO
 .hero {
   text-align: center;

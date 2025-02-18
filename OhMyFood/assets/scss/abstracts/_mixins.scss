@@ -5,16 +5,17 @@
   justify-content: center;
 }
 
-@mixin button($bg-color, $text-color) {
-  background-color: $bg-color;
-  color: $text-color;
+@mixin button-style($bg-color1, $bg-color2) {
+  padding: 10px 20px;
+  background: linear-gradient(0deg, $bg-color1, $bg-color2);
+  color: white;
+  text-align: center;
   border: none;
   border-radius: 25px;
-  padding: 15px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
-
-  &:hover {
-    background-color: lighten($bg-color, 10%);
-  }
+  height: 50px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }

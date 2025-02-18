@@ -1,0 +1,15 @@
+@mixin button-animation($bg-color1, $bg-color2) {
+  @media (min-width: 769px) {
+    &:hover {
+      background: linear-gradient(0deg, lighten($bg-color1, 10%), lighten($bg-color2, 10%));
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &:active {
+      background: linear-gradient(0deg, lighten($bg-color1, 10%), lighten($bg-color2, 10%));
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+  }
+}

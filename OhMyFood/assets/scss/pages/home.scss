@@ -22,24 +22,8 @@
   }
 
   &__cta {
-    padding: 10px 20px;
-    background: linear-gradient(0deg, $primary-color, $secondary-color);
-    color: white;
-    text-align: center;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
-    height: 50px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      background: linear-gradient(0deg, lighten($primary-color, 10%), lighten($secondary-color, 10%));
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    }
+    @include button-style($primary-color, $secondary-color);
+    @include button-animation($primary-color, $secondary-color);
   }
 }
 

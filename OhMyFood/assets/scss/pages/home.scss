@@ -189,36 +189,17 @@
       position: absolute;
       font-size: 1.5rem;
       color: transparent;
-      -webkit-text-stroke: 1px #000000;
       background-size: 0 0;
       background: linear-gradient(0deg, $primary-color, $secondary-color) ;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: background-size 1s ease-in-out;
     }
 
-    // Animation de remplissage progressif du centre vers l'extérieur
     &-checkbox:checked + label i {
-      background-size: 100% 100%;
+      animation: fill-heart 0.5s forwards;
     }
 
-    // Animation de vidage progressif
     &-checkbox:not(:checked) + label i {
-      background-size: 0 0;
+      animation: empty-heart 0.5s forwards;
     }
-  }
-}
-
-@keyframes fill-heart {
-  0% {
-    color: transparent;
-    background: transparent;
-    -webkit-text-stroke: 1px #000000;
-  }
-  100% {
-    color: $secondary-color;
-    background: linear-gradient(135deg, $secondary-color, $primary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }

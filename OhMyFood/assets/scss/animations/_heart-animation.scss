@@ -1,0 +1,31 @@
+// OhMyFood/assets/scss/animations/_heart-animation.scss
+
+@keyframes fill-heart {
+  0% {
+    background-size: 0 0;
+    -webkit-text-stroke: 1px #000000;
+  }
+  50% {
+    background-size: 50% 50%;
+    -webkit-text-stroke: 0.5px #000000;
+  }
+  100% {
+    background-size: 100% 100%;
+    -webkit-text-stroke: 0 #000000;
+  }
+}
+
+@keyframes empty-heart {
+  0% {
+    background-size: 100% 100%;
+    -webkit-text-stroke: 0 #000000;
+  }
+  50% {
+    background-size: 50% 50%;
+    -webkit-text-stroke: 0.5px #000000;
+  }
+  100% {
+    background-size: 0 0;
+    -webkit-text-stroke: 1px #000000;
+  }
+}

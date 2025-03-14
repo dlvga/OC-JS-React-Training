@@ -27,6 +27,10 @@
     width: 100%;
     position: relative;
 
+    @include desktop {
+      box-shadow: none;
+    }
+
     img {
       width: 162px;
     }
@@ -41,6 +45,10 @@
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #EAEAEA;
     width: 100%;
+
+    @include desktop {
+      box-shadow: none;
+    }
 
     &-description {
       font-weight: 500;

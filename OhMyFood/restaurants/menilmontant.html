@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La palette du goût</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
 <!-- Header with back button -->
-<header class="header header--menu">
-    <a href="../index.html" class="header__back-button">&#8592;</a>
-    <h1 class="header__logo">ohmyfood</h1>
+<header class="header">
+    <a href="../index.html" class="header__back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <a href="../index.html" class="header__logo">
+        <img src="../assets/images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
+    </a>
 </header>
 
 <!-- Restaurant banner-->
@@ -27,7 +32,12 @@
 
     <div class="restaurant__title">
         <h2 class="restaurant__title-text">La palette du goût</h2>
-        <button class="restaurant__favorite-button">&#9825;</button>
+        <button class="restaurant-card__favorite">
+            <input type="checkbox" id="favorite" class="restaurant-card__favorite-checkbox">
+            <label for="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </label>
+        </button>
     </div>
 
     <!-- Starters -->
@@ -112,8 +122,9 @@
 </main>
 
 <!-- Footer -->
+<!-- Footer -->
 <footer class="footer">
-    <h2 class="footer__logo">ohmyfood</h2>
+    <div class="footer__logo"><img src="../assets/images/logo/ohmyfood_white.svg" alt="ohmyfood logo"></div>
     <ul class="footer__links">
         <li class="footer__item">
             <i class="fas fa-utensils"></i>
@@ -121,10 +132,10 @@
         </li>
         <li class="footer__item">
             <i class="fas fa-handshake"></i>
-            <a href="#"><strong>Devenir partenaire</strong></a>
+            <a href="#">Devenir partenaire</a>
         </li>
         <li class="footer__item"><a href="#">Mentions légales</a></li>
-        <li class="footer__item"><a href="#">Contact</a></li>
+        <li class="footer__item"><a href="mailto:oc@ohmyfood.com">Contact</a></li>
     </ul>
 </footer>
 

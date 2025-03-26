@@ -1,7 +1,7 @@
 p {
   margin: 0;
 }
-// Bannière
+
 .restaurant__banner {
   position: relative;
   width: 100%;
@@ -14,7 +14,7 @@ p {
   }
 }
 
-// Menu
+
 .menu {
   background-color: $light-grey;
   padding: 20px 15px 15px;
@@ -76,35 +76,62 @@ p {
     padding: 15px;
     margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: all 0.3s ease;
 
-    &:hover {
-      transform: scale(1.02);
+    input {
+      display: none;
     }
 
     &-title {
-      font-size: 16px;
+      font-size: 1.1rem;
       font-weight: bold;
+      @include ellipsis;
+    }
+
+    &-content {
+      width: 100%;
+      transition: width 0.2s ease;
     }
 
     &-bottom {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-top: 5px;
 
       &-desc {
         font-size: 14px;
         color: #555;
+        @include ellipsis;
       }
 
       &-price {
         font-size: 16px;
         font-weight: bold;
         color: $dark-grey;
+      }
+    }
+
+    &-check {
+      background-color: $tertiary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 70px;
+      margin-top: -15px;
+      margin-left: 15px;
+      margin-right: -75px;
+      border-radius: 0 15px 15px 0;
+      transition: all 0.2s ease-out;
+
+      i {
+        color: white;
+        font-size: 1.2rem;
       }
     }
   }
@@ -115,4 +142,5 @@ p {
     width: 200px;
   }
 }
+
 

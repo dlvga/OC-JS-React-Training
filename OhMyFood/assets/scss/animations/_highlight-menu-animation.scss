@@ -1,0 +1,6 @@
+.menu__item {
+  input:checked + .menu__item-content  {
+    width: calc(100% - 60px);
+  }
+}
+

@@ -42,6 +42,10 @@
   padding: 30px 20px 70px;
   gap: 25px;
 
+  @include tablet {
+    align-items: center;
+  }
+
   @include desktop {
     padding: 30px 180px 70px;
   }
@@ -94,6 +98,7 @@
     border-radius: 50%;
     position: relative;
     left: -25px;
+    flex-shrink: 0;
   }
 
   &__icon {
@@ -143,17 +148,14 @@
 
 // RESTAURANT CARD
 .restaurant-card {
-  //display: block;
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
-  //position: relative;
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s ease-in-out;
 
   @include tablet {
-    //flex: 1 1 calc(50% - 50px);
     width: calc(50% - 50px);
   }
 

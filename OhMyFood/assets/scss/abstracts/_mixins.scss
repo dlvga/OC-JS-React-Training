@@ -41,3 +41,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@mixin mobile {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}

@@ -160,7 +160,7 @@
   }
 
   &:hover {
-    transform: scale(1.02);
+    //transform: scale(1.02);
   }
 
   &__image {
@@ -236,17 +236,17 @@
       position: absolute;
       font-size: 1.5rem;
       color: transparent;
-      background-size: 0 0;
       background: linear-gradient(0deg, $primary-color, $secondary-color) ;
       -webkit-background-clip: text;
+      -webkit-text-stroke: 1px #000000;
     }
 
     &-checkbox:checked + label i {
-      animation: fill-heart 0.5s forwards;
+      animation: fill-heart 1s forwards;
     }
 
     &-checkbox:not(:checked) + label i {
-      animation: empty-heart 0.5s forwards;
+      animation: empty-heart 1s forwards;
     }
   }
 }

@@ -1,27 +1,29 @@
-// heart-animation.scss
-
-@keyframes fill-heart {
-  0% {
-    font-size: 0;
-  }
-  50% {
-    -webkit-text-stroke: 0.5px #000000;
-  }
-  100% {
-    -webkit-text-stroke: 0 #000000;
-  }
+.heart-outline {
+  color: transparent;
+  position: relative;
+  -webkit-text-stroke: 1px #000000;
+  transition: opacity 2s;
 }
 
-@keyframes empty-heart {
-  0% {
-    font-size: large;
-    -webkit-text-stroke: 0 #000000;
-  }
-  50% {
-    font-size: 0;
-    -webkit-text-stroke: 0.5px #000000;
-  }
-  100% {
-    background: white;
-  }
+.heart-fill {
+  position: absolute;
+  color: transparent;
+  background: linear-gradient(0deg, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1s, transform 1s;
 }
+
+.restaurant-card__favorite-checkbox:checked + label .heart-fill {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.restaurant-card__favorite-checkbox:checked + label .heart-outline {
+  opacity: 0;
+}
+
+
+

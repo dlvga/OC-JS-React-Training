@@ -77,9 +77,16 @@ p {
     font-weight: 300;
     color: $dark-grey;
     margin-bottom: 10px;
-    border-bottom: 2px solid $tertiary-color;
     display: inline-block;
     padding-bottom: 5px;
+    &::after {
+      content: '';
+      display: block;
+      width: 38px;
+      height: 2px;
+      background-color: $tertiary-color;
+      margin-top: 5px;
+    }
   }
 
   &__item {

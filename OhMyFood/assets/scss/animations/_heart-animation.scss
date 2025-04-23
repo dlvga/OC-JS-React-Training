@@ -25,5 +25,14 @@
   opacity: 0;
 }
 
+.restaurant__favorite-checkbox:checked + label .heart-fill {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.restaurant__favorite-checkbox:checked + label .heart-outline {
+  opacity: 0;
+}
+
 
 

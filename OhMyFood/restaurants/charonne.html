@@ -24,30 +24,31 @@
 </header>
 
 <!-- Restaurant banner-->
-<section class="restaurant__banner">
+<div class="restaurant__banner">
     <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"
          class="restaurant__banner-img">
-</section>
+</div>
 
 <!-- Menu -->
 <main class="menu">
 
-    <div class="restaurant__title">
-        <h2 class="restaurant__title-text">La note enchantée</h2>
-        <button class="restaurant-card__favorite">
-            <input type="checkbox" id="favorite" class="restaurant-card__favorite-checkbox">
-            <label for="favorite">
+    <div class="restaurant__header">
+        <h2 class="restaurant__header-title">La note enchantée</h2>
+        <div class="restaurant__header-favorite">
+            <input type="checkbox" id="favorite" class="restaurant__favorite-checkbox">
+            <label for="favorite" class="restaurant__favorite-label">
                 <i class="fa-solid fa-heart heart-outline"></i>
                 <i class="fa-solid fa-heart heart-fill"></i>
             </label>
-        </button>
+        </div>
     </div>
 
     <!-- Starters -->
     <section class="menu__section menu__section--starters">
         <h3 class="menu__title">ENTRÉES</h3>
-        <label class="menu__item">
-            <input type="checkbox">
+        <div class="menu__item">
+            <label for="checkbox-starters1" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-starters1">
             <div class="menu__item-content">
                 <p class="menu__item-title">Ravioles de foie gras</p>
                 <div class="menu__item-bottom">
@@ -58,9 +59,10 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
-        <label class="menu__item">
-            <input type="checkbox">
+        </div>
+        <div class="menu__item">
+            <label for="checkbox-starters2" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-starters2">
             <div class="menu__item-content">
                 <p class="menu__item-title">Caviar osciètre</p>
                 <div class="menu__item-bottom">
@@ -71,9 +73,10 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
-        <label class="menu__item">
-            <input type="checkbox">
+        </div>
+        <div class="menu__item">
+            <label for="checkbox-starters3" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-starters3">
             <div class="menu__item-content">
                 <p class="menu__item-title">Homard et espuma de potiron</p>
                 <div class="menu__item-bottom">
@@ -84,9 +87,10 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
-        <label class="menu__item">
-            <input type="checkbox">
+        </div>
+        <div class="menu__item">
+            <label for="checkbox-starters4" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-starters4">
             <div class="menu__item-content">
                 <p class="menu__item-title">Foie gras de canard cuit entier</p>
                 <div class="menu__item-bottom">
@@ -97,14 +101,15 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
+        </div>
     </section>
 
     <!-- Mains -->
     <section class="menu__section menu__section--mains">
         <h3 class="menu__title">PLATS</h3>
-        <label class="menu__item">
-            <input type="checkbox">
+        <div class="menu__item">
+            <label for="checkbox-mains1" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-mains1">
             <div class="menu__item-content">
                 <p class="menu__item-title">Noix de coquilles Saint-Jacques</p>
                 <div class="menu__item-bottom">
@@ -115,9 +120,10 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
-        <label class="menu__item">
-            <input type="checkbox">
+        </div>
+        <div class="menu__item">
+            <label for="checkbox-mains2" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-mains2">
             <div class="menu__item-content">
                 <p class="menu__item-title">Langoustine poêlée</p>
                 <div class="menu__item-bottom">
@@ -128,9 +134,10 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
-        <label class="menu__item">
-            <input type="checkbox">
+        </div>
+        <div class="menu__item">
+            <label for="checkbox-mains3" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-mains3">
             <div class="menu__item-content">
                 <p class="menu__item-title">Mijoté de queue de bœuf</p>
                 <div class="menu__item-bottom">
@@ -141,14 +148,15 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
+        </div>
     </section>
 
     <!-- Desserts -->
     <section class="menu__section menu__section--desserts">
         <h3 class="menu__title">DESSERTS</h3>
-        <label class="menu__item">
-            <input type="checkbox">
+        <div class="menu__item">
+            <label for="checkbox-desserts1" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-desserts1">
             <div class="menu__item-content">
                 <p class="menu__item-title">Macaron noisette et chocolat</p>
                 <div class="menu__item-bottom">
@@ -159,9 +167,10 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
-        <label class="menu__item">
-            <input type="checkbox">
+        </div>
+        <div class="menu__item">
+            <label for="checkbox-desserts2" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-desserts2">
             <div class="menu__item-content">
                 <p class="menu__item-title">Baba au rhum revisité</p>
                 <div class="menu__item-bottom">
@@ -172,9 +181,10 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
-        <label class="menu__item">
-            <input type="checkbox">
+        </div>
+        <div class="menu__item">
+            <label for="checkbox-desserts3" class="menu__item-label"></label>
+            <input type="checkbox" id="checkbox-desserts3">
             <div class="menu__item-content">
                 <p class="menu__item-title">Tarte au citron meringuée</p>
                 <div class="menu__item-bottom">
@@ -185,7 +195,7 @@
             <div class="menu__item-check">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-        </label>
+        </div>
     </section>
 
     <button class="menu__cta">Commander</button>

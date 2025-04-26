@@ -15,24 +15,50 @@
   transform: scale(0);
   transition: opacity 1s, transform 1s;
 }
+// To avoid heart checkbox checked animation on tablet and desktop
+@include mobile {
 
-.restaurant-card__favorite-checkbox:checked + label .heart-fill {
-  opacity: 1;
-  transform: scale(1);
+  // For the restaurant card in home page
+  .restaurant-card__favorite-checkbox:checked + label .heart-fill {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .restaurant-card__favorite-checkbox:checked + label .heart-outline {
+    opacity: 0;
+  }
+
+  //For the restaurant page
+  .restaurant__favorite-checkbox:checked + label .heart-fill {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .restaurant__favorite-checkbox:checked + label .heart-outline {
+    opacity: 0;
+  }
 }
 
-.restaurant-card__favorite-checkbox:checked + label .heart-outline {
-  opacity: 0;
+@include tablet {
+  .restaurant-card__favorite label:hover .heart-fill{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .restaurant-card__favorite label:hover .heart-outline {
+    opacity: 0;
+  }
+
+  .restaurant__favorite-checkbox + label:hover .heart-fill {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .restaurant__favorite-checkbox + label:hover .heart-outline {
+    opacity: 0;
+  }
 }
 
-.restaurant__favorite-checkbox:checked + label .heart-fill {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.restaurant__favorite-checkbox:checked + label .heart-outline {
-  opacity: 0;
-}
 
 
 

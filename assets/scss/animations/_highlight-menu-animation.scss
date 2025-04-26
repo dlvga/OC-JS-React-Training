@@ -1,14 +1,29 @@
-.menu__item {
-  @include mobile {
+.menu__item  {
+  /*@include mobile {
     input:checked + .menu__item-content {
       width: calc(100% - 60px);
     }
+  }*/
+  // not necessary to use mobile here, as the default is mobile
+  input:checked + .menu__item-content {
+    width: calc(100% - 60px);
   }
 
   @include tablet {
     &:hover .menu__item-content {
       width: calc(100% - 60px);
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -57,13 +72,3 @@
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
